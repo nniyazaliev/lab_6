@@ -26,13 +26,17 @@ public class NotificationTest {
         Thread t1 = new Thread(waitTask, "WT1");
         Thread t2 = new Thread(waitTask, "WT2"); 
         Thread t3 = new Thread(waitTask, "WT3");
-        Thread t4 = new Thread(notifyTask,"NT1");
+        Thread t4 = new Thread(waitTask, "WT4");
+        Thread t5 = new Thread(waitTask, "WT5");
+        Thread t6 = new Thread(notifyTask,"NT1");
         t1.start();
         t2.start();
         t3.start();
+        t4.start();
+        t5.start();
         Thread.sleep(200);
 
-        t4.start();
+        t6.start();
       
     }
 

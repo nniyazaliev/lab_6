@@ -1,7 +1,7 @@
-class MyThread extends Thread
+class Thread1 extends Thread
 {
 	private String name;
-	public MyThread(String name)
+	public Thread1(String name)
 	{
 		this.name=name;
 	}
